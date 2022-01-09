@@ -16,7 +16,7 @@ y = SingletonClass()
 print(x==y)
 
 
-class NotSingletonClass():
+class NotSingletonClass:
     pass
 
 
