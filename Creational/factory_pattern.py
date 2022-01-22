@@ -25,5 +25,6 @@ class TransportFactory:
         assert 0, "Coudn't find transport "+ type
 
 
+
 car = TransportFactory.get_transport("car")
 car.give_ride()

@@ -44,3 +44,4 @@ if __name__ == '__main__':
 
     for minion in minions:
         minion.call_me()
+
