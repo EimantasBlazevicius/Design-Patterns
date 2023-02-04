@@ -17,7 +17,7 @@ class Proxy:
 
 class ProxyImage(Proxy):
     def display_image(self):
-        if self._proxystate == None:
+        if self._proxystate is None:
             self._subject.load_image_from_disk()
             self._proxystate = 1
         print("display " + self._subject._filename)

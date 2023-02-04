@@ -1,6 +1,6 @@
 class Observer:
     def update(self, obj, *args, **kwargs):
-        raise NotImplementedError
+        print("I see things")
 
 
 class Observable:
@@ -16,3 +16,10 @@ class Observable:
     def notify_observer(self, *args, **kwargs):
         for observer in self._observers:
             observer.update(self, *args, **kwargs)
+
+
+observer = Observer()
+thing = Observable()
+
+thing.add_observer(observer)
+thing.notify_observer()

@@ -11,12 +11,12 @@ class PremiumInterface:
 
 # == concrete ride classes
 class CarDeluxRide(DeluxeInterface):
-    def give_premium_ride(self):
+    def give_deluxe_ride(self):
         print("Delux car ride")
 
 
 class BikeDeluxRide(DeluxeInterface):
-    def give_premium_ride(self):
+    def give_deluxe_ride(self):
         print("Delux bike ride")
 
 
@@ -65,5 +65,5 @@ class TransportFactory:
             return Bike().get_ride(category)
 
 
-car = TransportFactory.get_transport(type="bike", category="delux")
-car.give_premium_ride()
+transport = TransportFactory.get_transport(type="car", category="premium")
+transport.give_premium_ride()
